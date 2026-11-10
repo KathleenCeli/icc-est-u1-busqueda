@@ -29,5 +29,10 @@ public class Persona {
     public void setGenero(String genero) {
         this.genero = genero;
     }
+
+    @Override 
+    public String toString() {
+        return "Persona [Nombre = " + name + ", genero = " + genero + ", edad = " + edad + "]";
+    }
 }    
 
