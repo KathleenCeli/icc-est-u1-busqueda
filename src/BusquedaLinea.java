@@ -9,6 +9,7 @@ public class BusquedaLinea {
         this.personas = personas;
     }
 
+    //Caso 1
     // Busqueda una persona
     // Retorne la persona si lo encontro
     // Retorne null si no lo encontro
@@ -21,10 +22,11 @@ public class BusquedaLinea {
         return null;
     }
 
+    //Caso 2
     // Busque la pos de una persona
     // Retorne la pos persona si lo encuentro
     // Retorne -1 si no lo encuentra
-    public int findPosByName(String name) {
+    public int findByIndex(String name) {
         for (int i = 0; i < personas.size(); i++) {
             if (personas.get(i).getName().equals(name)) {
                 return i;
